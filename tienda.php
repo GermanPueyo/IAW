@@ -8,7 +8,7 @@
         <h1>Selecciona tus productos</h1>
 
         <form method="POST">
-            <input type="checkbox" name="artículos[]" value="Camiseta">
+            <input type="checkbox" name="articulos[]" value="Camiseta">
             <label>Camiseta (20€)</label><br>
 
             <input type="checkbox" name="articulos[]" value="Pantalón">
@@ -49,7 +49,7 @@
 
             //Creamos el bucle
             //Utilizo foreach para dividirlo
-            foreach ($seleccioanados as $item) {
+            foreach ($seleccionados as $item) {
 
                 // Recupero los precios
                 $precio_actual = $precios[$item];
