@@ -66,7 +66,7 @@ if (isset($_POST['datos'])) {
         <form action="" method="POST">
             <label>Usuario (> 3 chars):</label><br>
             <input type="text" name="datos[user]" required><br><br>
-            <label>Contraseña (> 5 chars>:</label><br>
+            <label>Contraseña (> 5 chars>):</label><br>
             <input type="password" name="datos[pass]" required><br><br>
             
             <input type="submit" value="Registrar">
