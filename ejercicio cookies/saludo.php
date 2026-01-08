@@ -31,7 +31,7 @@ session_start();
     ?>
 
     <br><br>
-    <a href="clon_de_pagina.php">Volver al formulario</a>
+    <a href="clon_pagina_web.php">Volver al formulario</a>
 
 </body>
 </html>
