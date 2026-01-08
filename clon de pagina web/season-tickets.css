@@ -1,0 +1,58 @@
+.season-tickets h1{
+    text-align: center;
+    margin: 5rem auto;
+}
+
+.season-tickets .pricing-table{
+    margin-bottom: 3rem;
+    width: 100%;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+}
+
+.season-tickets .pricing-table td,
+.season-tickets .pricing-table th{
+    padding: 1.75rem 1.5rem;
+    text-align: center;
+}
+
+.season-tickets .pricing-table th{
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.season-tickets .pricing-table tbody tr:nth-child(even){
+    background-color:#f6f6f6;
+}
+
+.season-tickets .pricing-table tbody tr.example-row{
+    background-color: rgba(144, 238, 144, 0.25);
+}
+
+.season-tickets .description{
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+    margin-top: 2rem;
+}
+
+.season-tickets .description h3{
+    color: var(--primary-color);
+    margin-top: 0;
+    font-weight: 700;
+}
+
+.season-tickets .description .cta-button{
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.season-tickets .description .cta-button:hover{
+    background-color: var(--shadow-color);
+}

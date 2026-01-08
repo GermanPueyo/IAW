@@ -1,0 +1,17 @@
+
+    a.menu-icon-17,
+    ul.links li.menu-icon-17 a,
+    ul.menu li.menu-icon-17 a {
+        background-image: url(/sites/default/files/menu_icons/home.png);
+        padding-left:63px;
+        background-repeat: no-repeat;
+        background-position: left center;
+    }
+    a.menu-icon-59,
+    ul.links li.menu-icon-59 a,
+    ul.menu li.menu-icon-59 a {
+        background-image: url(/sites/default/files/menu_icons/orgchart.svg);
+        padding-left:px;
+        background-repeat: no-repeat;
+        background-position: left center;
+    }
