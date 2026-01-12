@@ -11,17 +11,12 @@ if(hayCookie()){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar sesión - Riot Games</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        
-        .pref-label { font-size: 10px; font-weight: 700; color: #111; margin-bottom: 5px; display: block; }
-        .input-group select { width: 100%; height: 48px; background-color: #ededed; border-radius: 4px; border: none; padding: 0 10px; margin-bottom: 16px; }
-    </style>
 </head>
 <body>
     <svg class="top-logo" viewBox="0 0 169 48">...</svg>
 
     <div class="login-card">
-        <h1>Preferencias</h1>
+        <h1>Inicio de Sesión</h1>
 
         <form action="saludo.php" method="GET">
             <div class="input-group">
