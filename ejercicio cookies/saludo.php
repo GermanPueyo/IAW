@@ -1,36 +1,54 @@
 <?php
-session_start();
+include "comprobar.php";
+$hayPreferencias=true;
+$array=null;
+
+if(hayCookie()==false){ 
+    if(hayGet()==false){ 
+        $hayPreferencias=false; 
+    } else {
+        $array=$_GET; 
+    }
+} else {
+    $array=$_COOKIE; 
+}
+
+if($hayPreferencias==false){
+    header("location:index.php"); 
+} else {
+    foreach($array as $indice=>$valor){
+        $$indice=$valor; 
+    }
+    
+    setcookie("nombre",$nombre,time()+60*60*24*30);
+    setcookie("apellidos",$apellidos,time()+60*60*24*30);
+    setcookie("fondo",$fondo,time()+60*60*24*30);
+    setcookie("frente",$frente,time()+60*60*24*30);
+    setcookie("letra",$letra,time()+60*60*24*30);
+}
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Resumen de Registro</title>
-</head>
-<body
-
-    <?php
-
-    if (isset($_SESSION['nombre'])) {
-        echo "<h1>Hola, " . htmlspecialchars($_SESSION['nombre']) . "</h1>";
-    }
-
-
-    if (isset($_COOKIE['dni_usuario'])) {
-        echo "<p>Tu documento identificado es: " . $_COOKIE['dni_usuario'] . "</p>";
-    }
-
-    if (isset($_COOKIE['direccion_usuario'])) {
+    <meta charset="UTF-8">
+    <title>Bienvenido</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
         
-        $direccion = unserialize($_COOKIE['direccion_usuario']);
-        echo "<h3>Datos de envío:</h3>";
-        echo "Calle: " . $direccion['calle'] . "<br>";
-        echo "Ciudad: " . $direccion['ciudad'] . "<br>";
-        echo "Código Postal: " . $direccion['cp'];
-    }
-    ?>
-
-    <br><br>
-    <a href="clon_pagina_web.php">Volver al formulario</a>
-
+        body {
+            background-image: none !important; 
+            background-color: <?=$fondo?> !important; 
+            color: <?=$frente?> !important; 
+            font-family: <?=$letra?> !important; 
+        }
+        .login-card h1 { color: <?=$frente?>; }
+        .reset-link { margin-top: 20px; font-weight: bold; color: #d13639; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="login-card">
+        [cite_start]<h1>Hola <?="$nombre $apellidos"?></h1> 
+        [cite_start]<a href="borrar.php" class="reset-link">Restablecer preferencias</a> 
+    </div>
 </body>
 </html>

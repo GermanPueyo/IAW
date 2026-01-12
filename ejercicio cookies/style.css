@@ -1,0 +1,232 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('./images/13.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+body::before {
+    content: " ";
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+    position: fixed;
+    max-height: 303px;
+    height: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.top-logo {
+    position: absolute;
+    top: 50px;
+    left: 72px;
+    width: 130px;
+    fill: white;
+    z-index: 10;
+}
+
+.login-card {
+    background-color: white;
+    width: 624px;
+    padding: 60px 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    z-index: 5;
+    position: relative;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #111;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group input {
+    width: 100%;
+    height: 48px;
+    padding: 0 16px;
+    background-color: #ededed;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    outline: none;
+    margin-bottom: 16px;
+}
+
+.input-group input:focus {
+    background-color: white;
+    border-color: #111;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.btn-social {
+    flex: 1;
+    height: 32px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.facebook { background-color: #1877f2; }
+.google { background-color: white; border: 2px solid #e1e1e1; }
+.apple { background-color: #000; }
+.xbox { background-color: #107c10; }
+.playstation { background-color: #00439c; }
+
+.btn-social img {
+    height: 16px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 60px;
+}
+
+.checkbox-container input {
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+    accent-color: #d13639;
+}
+
+.btn-submit {
+    width: 64px;
+    height: 64px;
+    border-radius: 22px;
+    border: 2px solid #e1e1e1;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 30px auto;
+    transition: 0.2s;
+}
+
+.btn-submit svg {
+    width: 32px;
+    fill: #e1e1e1;
+}
+
+.btn-submit:hover {
+    background-color: #d13639;
+    border-color: #d13639;
+}
+
+.btn-submit:hover svg {
+    fill: white;
+}
+
+.links a {
+    text-decoration: none;
+    color: #b2b2b2;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.main-footer {
+    position: absolute;
+    bottom: 30px;
+    left: 48px;
+    right: 48px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #b2b2b2;
+    text-decoration: none;
+    font-size: 9px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.legal-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.legal-text p {
+    color: #7e7e7e;
+    font-size: 7.5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.legal-text a {
+    color: #F0F0F0;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.lang-tex{
+    color:#7e7e7e
+}
+
+.lang-selector {
+    width: 51.09px;
+    height: 26.31px;
+    background-color: #EBEBEB33;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    border-radius: 2px;
+    margin-bottom: 15px;
+}
