@@ -1,7 +1,7 @@
 <?php
 include "practica_comprobar.php";
 if(hayCookie()){
-    header("location:practica_saludo.php"); // Si ya hay cookies, saltamos al saludo 
+    header("location:practica_saludo.php");
     exit;
 }
 ?>
