@@ -47,8 +47,8 @@ if($hayPreferencias==false){
 </head>
 <body>
     <div class="login-card">
-        [cite_start]<h1>Hola <?="$nombre $apellidos"?></h1> 
-        [cite_start]<a href="borrar.php" class="reset-link">Restablecer preferencias</a> 
+        <h1>Hola <?="$nombre $apellidos"?></h1> 
+        <a href="borrar.php" class="reset-link">Restablecer preferencias</a> 
     </div>
 </body>
 </html>

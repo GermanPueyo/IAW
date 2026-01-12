@@ -23,31 +23,31 @@ if(hayCookie()){
     <div class="login-card">
         <h1>Preferencias</h1>
 
-        [cite_start]<form action="saludo.php" method="GET">
+        <form action="saludo.php" method="GET">
             <div class="input-group">
-                [cite_start]<input type="text" name="nombre" placeholder="NOMBRE" required>
+                <input type="text" name="nombre" placeholder="NOMBRE" required>
             </div>
             <div class="input-group">
-                [cite_start]<input type="text" name="apellidos" placeholder="APELLIDOS" required>
+                <input type="text" name="apellidos" placeholder="APELLIDOS" required>
             </div>
 
             <div class="input-group">
                 <span class="pref-label">COLOR DE FONDO</span>
-                [cite_start]<input type="color" name="fondo" value="#FFFFFF">
+                <input type="color" name="fondo" value="#FFFFFF">
             </div>
 
             <div class="input-group">
                 <span class="pref-label">COLOR DE TEXTO</span>
-                [cite_start]<input type="color" name="frente" value="#000000">
+                <input type="color" name="frente" value="#000000">
             </div>
 
             <div class="input-group">
                 <span class="pref-label">TIPO DE LETRA</span>
-                [cite_start]<select name="letra">
+                <select name="letra">
                     <option value="Arial, sans-serif">Arial (Estándar)</option>
                     <option value="'Shadows Into Light', cursive">Shadows Into Light</option>
                     <option value="'Roboto', sans-serif">Roboto</option>
-                [cite_start]</select>
+                </select>
             </div>
 
             <button class="btn-submit" type="submit">
